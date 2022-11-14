@@ -3,11 +3,11 @@ pipeline {
    
     stages {
        
-       stage('Git checkout') {
-        steps {
-           git branch: 'master', credentialsId: 'git-jenkins', url: 'https://github.com/walid-mbk/Myapp.git'
-         }
-      }
+      // stage('Git checkout') {
+        //steps {
+          // git branch: 'master', credentialsId: 'git-jenkins', url: 'https://github.com/walid-mbk/Myapp.git'
+         //}
+      //}
 
       stage("npm install") {
             steps {
